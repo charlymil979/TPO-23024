@@ -2,7 +2,7 @@ const d = document;
 const $carrusel = d.querySelector(".carrusel");
 
 function carrusel() {
-  fetch("https://github.com/charlymil979/TPO-23024/tree/main/docs/json.carrusel.json")
+  fetch("https://github.com/charlymil979/TPO-23024/tree/main/docs/json/carrusel.json")
     .then((resp) => resp.json())
     .then((data) => {
       // console.log(data);
