@@ -14,7 +14,9 @@ headers: {
 credentials: 'include'
 };
 fetch('https://github.com/charlymil979/TPO-23024/tree/main/docs/json/carrusel.json', obj )
-    .then((resp) => resp.json())
+    .then((resp) => {
+        console.log(resp);
+        resp.json()})
     .then((data) => {
       // console.log(data);
       let $imagenes = "";
