@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/cono.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="light">
+  <header>
+    <img src="img/cono.svg" alt="Logo institucional">
+    <h1>be <br>safe.</h1>
+  </header>
+  <nav>
+    <a href="/index.html">Home</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="/productos.html">Productos</a>
+    <a href="/formulario.html">Contacto</a>
+  </nav>
+    
+    <section>
+      <h3>Formulario de contacto</h3>
+      <p>Consultenos sobre nuestros productos, o suscribase para estar al día de todas las novedades acerca de los EPP</p>
+    
+      <form class="form">
+        <label>Nombre:
+          <input type="text" name="nombre" placeholder="Ingrese su nombre"
+            title="Nombre sólo acepta letras y espacios en blanco" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]{1,50}$"
+            required></label>
+    
+        <p>
+          <label>E-mail:
+            <input type="mail" name="mail"
+              pattern="^[A-Za-z0-9]+(\.[A-Za-z0-9]+|-[A-Za-z0-9]+|_[A-Za-z0-9]+)*@[A-Za-z0-9-]+(\.[A-Za-z0-9-]+)*(\.[A-Za-z]{2,15})$"
+              required placeholder="Ingrese su e-mail" title="e-mail valido: usuario@servidor.dominio" required></label>
+    
+        </p>
+    
+        <p>
+          <label>Dejenos un comentario
+            <textarea name="comentarios" cols="30" rows="5"></textarea>
+          </label>
+        </p>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+    <script src="js/formulario.js" type="module"></script>
+    <script src="js/dark.js" type="module"></script>
+
+</body>
+
+</html>
