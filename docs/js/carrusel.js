@@ -2,15 +2,12 @@ const d = document;
 const $carrusel = d.querySelector(".carrusel");
 
 function carrusel() {
-  var obj = {
-method: 'GET' ,
-mode : 'cors',
-headers: {
-'Access-Control-Allow-Origin': '*',
-'Content-Type': 'application/json'
-}
-};
-fetch('https://github.com/charlymil979/TPO-23024/tree/main/docs/json/carrusel.json', obj )
+
+fetch('https://raw.githubusercontent.com/charlymil979/TPO-23024/main/docs/json/carrusel.json', {
+  headers: {
+    'Access-Control-Allow-Origin': '*'
+  }
+})
     .then((resp) => {
         console.log(resp);
         resp.json()})
