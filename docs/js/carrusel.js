@@ -2,7 +2,18 @@ const d = document;
 const $carrusel = d.querySelector(".carrusel");
 
 function carrusel() {
-  fetch("https://github.com/charlymil979/TPO-23024/tree/main/docs/json/carrusel.json")
+  var obj = {
+method: 'GET' ,
+mode : 'no-cors',
+headers: {
+'Access-Control-Request-Headers': 'Authorization',
+'Authorization': 'Basic amFzcGVyYWRtaW46amFzcGVyYWRtaW4=',
+'Content-Type': 'application/json',
+'Origin': ''
+},
+credentials: 'include'
+};
+fetch('https://github.com/charlymil979/TPO-23024/tree/main/docs/json/carrusel.json', obj )
     .then((resp) => resp.json())
     .then((data) => {
       // console.log(data);
