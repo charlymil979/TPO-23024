@@ -4,7 +4,7 @@ const $carrusel = d.querySelector(".carrusel");
 function carrusel() {
   var obj = {
 method: 'GET' ,
-mode : 'no-cors',
+mode : 'cors',
 headers: {
 'Access-Control-Allow-Origin': '*',
 'Content-Type': 'application/json'
