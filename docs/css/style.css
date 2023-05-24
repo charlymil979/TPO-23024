@@ -4,6 +4,7 @@
 }
 
 html {
+  scroll-behavior: smooth;
   margin: 1vw 2vw;
   padding: 0;
   color: var(--color-texto);
@@ -12,6 +13,10 @@ html {
 
 header {
   display: flex;
+}
+
+header img{
+  max-height: 40vh;
 }
 
 a {
@@ -24,7 +29,7 @@ a {
   width: 15%;
 }
 a img:hover {
-  background-color: orange;
+  background-color: var(--footer-bg);
   border-radius: 50%;
 }
 
@@ -42,16 +47,60 @@ details {
   display: inline;
 }
 
+iframe{
+  width:320px;
+  height:190px;
+  border-radius:10px;
+  box-shadow:2px 4px 4px rgb(0 0 0 / 25%);
+  display:flex;
+  justify-content:flex-end;
+  border:1px solid #bcbcbc;
+  zoom: 00.5rem;
+}
+
+.descripcion img{
+  width: 30%;
+  height: auto;
+}
+
 .dolar {
   position: fixed;
-  left: 10px;
+  top: 20%;
+  left: 25%;
   bottom: 10px;
+  z-index: 5;
+  
+}
+#imgdolar{
+  text-align: right;
+  margin-right: 0;
+  margin-left: auto;
+  width: 8vw;
+  border-radius: 50%;
+}
 
+.cierre{
+  position:absolute ;
+  right: 2px;
+  top:2px;
+  border-radius: 50%;
+  font-weight: bolder;
 }
 
 .articulos{
   margin-top: 10vh;
-  margin-left: 50%;
+  margin-left: 10%;
+}
+
+h4{
+  margin: 0 auto;
+  background-color: var(--footer-bg);
+  width: auto;
+  border-radius: 5%;
+}
+
+article{
+  padding-top: 25vh;
 }
 
 nav a {
@@ -61,6 +110,10 @@ nav a {
 
 nav:hover a {
   opacity: 40%;
+}
+
+.none{
+  display: none;
 }
 
 nav a:hover {
@@ -81,17 +134,41 @@ h1 {
   list-style: none;
 }
 
-.productos {
+.sticky{
+  text-align: center;
+  position: sticky;
+  top: 0px;
   margin: 20px 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  background-color: var(--color-fondo);
+}
+
+.productos {
+  position: sticky;
+  top: 17px;
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: var(--color-fondo);
 }
 .productos div {
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 18%;
+}
+
+.productos div img{
+  width: 100%;
+}
+
+.articulos{
+  margin-top: 10px;
 }
 
 .light {
@@ -215,18 +292,22 @@ h1 {
 
 .carrusel {
   margin: 10vh 0;
-  position: relative;
   width: 90vw;
   height: 60vh;
   text-align: center;
   overflow: hidden;
 }
+
+.slider{
+  position: relative;
+}
+
 .carrusel-foto {
   position: absolute;
   top: 0;
   left: 0;
   width: auto;
-  height: 100%;
+  /* height: 100%;  */
   opacity: 0;
   visibility: hidden;
   transition: opacity 1s ease;
@@ -240,8 +321,12 @@ h1 {
 
 footer {
   display: flex;
+  background-color: var(--footer-bg);
 }
 
 .pie p {
   width: 70%;
+}
+section{
+  text-align: center;
 }

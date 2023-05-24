@@ -17,11 +17,12 @@
 <body>
   <header>
     <div><img src="./img/cono.svg" alt="Logo institucional">
-    <h1>be <br>safe.</h1></div>
+      <h1>be <br>safe.</h1>
+    </div>
     <div>
       <img src="./img/industriaFondo.jpg" alt="header">
     </div>
-    
+
   </header>
   <nav>
     <a href="./index.html">Home</a>
@@ -29,33 +30,92 @@
     <a href="./productos.html">Productos</a>
     <a href="./formulario.html">Contacto</a>
   </nav>
+  
   <main>
-    <nav>
-      <a href="#1">Calzado</a>
-      <a href="#2">Auditivo</a>
-      <a href="#3">Visual</a>
-      <a href="#4">Respiratorio</a>
-      <a href="$5">Indumentaria</a>
-    </nav>
 
-    <aside class="dolar"><iframe
-        style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc"
-        src="https://dolarhoy.com/i/cotizaciones/dolar-bancos-y-casas-de-cambio" frameborder="0"></iframe>
-      <p>Las cotizaciones son a valor dolar oficial mas IVA</p>
-      </div>
+  <div class="dolar">
+    <button class="cierre">x</button>
+    <iframe
+      style="width:320px;height:260px;border-radius:10px;box-shadow:2px 4px 4px rgb(0 0 0 / 25%);display:flex;justify-content:center;border:1px solid #bcbcbc"
+      src="https://dolarhoy.com/i/cotizaciones/dolar-bancos-y-casas-de-cambio" frameborder="0"></iframe>
+    </div>
+    <img src="./img/dolar.jpg" id="imgdolar" alt="dolar">
 
-    </aside>
+
+
     <section class="articulos">
-      <article id="1">Calzado
+      <section class="sticky"><u>Nuestros Productos</u></section>
+      <section class="productos">
+        <!-- color 4fb600ff -->
+        <div>
+          <a href="./productos.html#auditiva"><img src="img/pAuditiva.svg" alt="Protección Auditiva">
+
+          </a>
+        </div>
+        <div>
+          <a href="./productos.html#ocular"><img src="img/pOcular.svg" alt="Protección Ocular">
+
+          </a>
+        </div>
+        <div>
+          <a href="./productos.html#respiratoria"><img src="img/pRespiratoria.svg" alt="Protección respiratoria">
+
+          </a>
+        </div>
+        <div>
+          <a href="./productos.html#calzado"><img src="img/calzado.svg" alt="Calzado de seguridad">
+
+          </a>
+        </div>
+        <div>
+          <a href="./productos.html#indumentaria"><img src="img/indumentaria.svg" alt="Indumentaria">
+
+          </a>
+        </div>
+
+      </section>
+      <article class="descripcion" id="auditiva">
+        <h4>Protección Auditiva</h4>
+        <img src="img/calzado.svg" alt="zapatos">
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
       </article>
-      <article id="2">Auditivo <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></article>
-      <article id="3">Visual</article>
-      <article id="4">Respiratorio</article>
-      <article id="5">Indumentaria</article>
+      <article class="descripcion" id="ocular">
+        <h4>Protección Ocular</h4> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </article>
+      <article class="descripcion" id="respiratoria">
+        <h4>Protección respiratoria</h4>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </article>
+      <article class="descripcion" id="calzado">
+        <h4>Calzado de Seguridad</h4>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </article>
+      <article class="descripcion" id="indumentaria">
+        <h4>Indumentaria</h4>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      </article>
     </section>
+      <footer>
+        <div class="pie">
+          <img src="img/cono.svg" alt="Logo institucional">
+        </div>
+        <div class="pie">
+          <p>Somos una empresa dedicada a la comercialización y distribución de Equipos y Elementos de Protección
+            Personal</p>
+          <h3>Contáctenos</h3>
+          <ul class=list>
+            <li><i class='bx bx-location-plus bx-sm'></i> Doctor Mestre 410, Villa Mercedes, San Luis</li>
+            <li><i class='bx bx-envelope bx-sm'></i> sitiobesafe@gmail.com</li>
+            <li><i class='bx bxl-whatsapp bx-sm'></i> 2657 245292</li>
+          </ul>
+      
+        </div>
+      
+      </footer>
+
   </main>
   <script src="js/dark.js" type="module"></script>
+  <script src="js/dolar.js"></script>
 </body>
 
 </html>

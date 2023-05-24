@@ -1,11 +1,14 @@
 const d = document,
   oscuro = "rgb(35,35,35)",
-  claro = "rgb(240, 240, 240)";
+  claro = "rgb(240, 240, 240)",
+  footer_claro = 'rgb(200,200,200)',
+  footer_oscuro = 'rgb(45,45,45)'
 
   
   export function darkButton() {
   document.documentElement.style.setProperty("--color-fondo",claro);
   document.documentElement.style.setProperty("--color-texto",oscuro);
+  document.documentElement.style.setProperty("--footer-bg",footer_claro);
 
   const $body = document.querySelector("body"),
     $dark = d.createElement("button");
@@ -26,12 +29,17 @@ export function darkMode() {
       localStorage.setItem("darkmode", 1);
         document.documentElement.style.setProperty("--color-fondo", oscuro);
         document.documentElement.style.setProperty("--color-texto", claro);
+        document.documentElement.style.setProperty("--footer-bg", footer_oscuro);
     },
     light = function () {
       $button.textContent = moon;
       localStorage.setItem("darkmode", 0);
         document.documentElement.style.setProperty("--color-fondo", claro);
         document.documentElement.style.setProperty("--color-texto", oscuro);
+         document.documentElement.style.setProperty(
+           "--footer-bg",
+           footer_claro
+         );
     };
   //este if es para comprobar si quedo activado en memoria
   if (isactive === "1") darkactive();
