@@ -437,6 +437,7 @@ h1 {
 
 .carrusel .slider img{
   margin: auto;
+  border-radius:5px
 }
 
 .foto-activa {
