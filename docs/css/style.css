@@ -615,7 +615,7 @@ section{
   }
 
   .info{
-    flex-direction: column;
+    flex-direction: column-reverse;
     width: 100vw;
   }
 
